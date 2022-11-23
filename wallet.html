@@ -120,7 +120,7 @@
               <br>
               <h1 id="cuentaM">Cuenta Tron</h1>
               <br>
-              <button type="button" class="btn" id="crearCuentaTron2">Crear Cuenta Tron</button>
+              <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
               <br>
               <br>
               <h2 class="camiloOcultar" id="respuesta">
@@ -134,14 +134,21 @@
                       <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
                       <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
                       <br>
-                      <h3 class="usdt">USDT</h3>
-                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
+                      <span id="respuestaNombreUser" class="moverUser"></span>
+                      <br>
                       <h3 class="trx">TRX</h3>
                       <h3 id="respuestaSaldoTRX" class="moversaldos">referencia</h3>
-                      <h3 class="moversaldos creado">Creada</h3>
-                      <h3 id="respuestaCreada" class="moverfechas">referencia</h3>
-                      <h3 class="moversaldos creado">Actualizada</h3>
-                      <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
+                      <h3 class="wplay">WPLAY</h3>
+                      <h3 id="respuestaSaldoWplay" class="moversaldos">referencia</h3>
+                      <h3 class="usdt">USDT</h3>
+                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
+                      <br>
+                      <br>
+                      <div style="display: flex;">
+                        <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
+                        <h3>Actualizada</h3>
+                      </div>
+                      <div id="tooltip" class="tooltip">Copied text to clipboard!</div> 
                   </div>
               </div>
 
@@ -158,10 +165,12 @@
       </div>
     </div>
     <!-- Fondo Particles-->
-    <script src="./js/index.js"></script>
+    <!-- <script src="./js/index.js"></script>
     <script src="./js/orders.js"></script>
     <script src="./js/app.js"></script>
-    <script src="./js/particles.min.js"></script>
+    <script src="./js/particles.min.js"></script> -->
+
+    <script src="./copiar.js"></script>
 
     <script src="./assets/js/logica/routes/routes.js"></script>
 
@@ -169,5 +178,7 @@
     <script src="./assets/js/logica/business/crearCuentaTronBussiness.js"></script>
     <script src="./assets/js/logica/controller/crearCuentaTronController.js"></script>
     <script src="./assets/js/logica/event/crearTronEvent.js"></script>
+
+    <script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script>
 </body>
 </html>
