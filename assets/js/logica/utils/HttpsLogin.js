@@ -7,20 +7,17 @@ function CallEndPointPost(url, jsonArgs) {
 
             console.log(data);
 
-            // var formData = JSON.stringify(data, null ,2);
             var formData = JSON.parse(data);
 
             console.log(formData);
 
             const idcfLogin = formData.IdCf;
             const tokenLogin = formData.Token;
+            const idPersonaLogin = formData.Id
 
-            // console.log( idcfLogin + " | " + tokenLogin);
-
-            // console.log(formData.Respose);
             if (formData.Response === 707) {
 
-
+                localStorage.setItem("idPersonaLogin",idPersonaLogin)
                 localStorage.setItem("idCfLogin", idcfLogin);
                 localStorage.setItem("tokenLogin", tokenLogin);
                 window.location.href = URL_API_BASE;
