@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', e => {
 
     $.ajax({
         type: "GET",
-        url: "http://52.175.225.67:8094/Api/GetCuentasTron",
+        url: "https://appwollpay.app/Api/GetCuentasTron",
         data: { "IdCf": idcff , "Token": tokeen , "Skip": 1 , "Take":1 },
         success: function (data) {
 
