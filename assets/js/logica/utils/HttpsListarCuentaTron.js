@@ -15,11 +15,9 @@ document.addEventListener('DOMContentLoaded', e => {
 
             console.log(formData);
 
-            var formData1 = JSON.parse(formData[0].Json);
+            if (formData != "" ) {
 
-            console.log(formData1);
-
-            if (formData1.IsActivo != false) {
+                var formData1 = JSON.parse(formData[0].Json);
 
                 const refe = document.getElementById('respuestaReferencia');
                 const saldoUsdt = document.getElementById('respuestaSaldoUSDT')
