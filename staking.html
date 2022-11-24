@@ -16,21 +16,24 @@
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" 
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"
+        integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
 
 </head>
 
@@ -50,12 +53,12 @@
             </div>
 
             <div class="sidebar">
-                <a href="Dash.html" ><span class="material-icons-sharp">
+                <a href="Dash.html"><span class="material-icons-sharp">
                         grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="wallet.html" ><span class="material-icons-sharp">
+                <a href="wallet.html"><span class="material-icons-sharp">
                         account_balance_wallet</span>
                     <h3>Wallet</h3>
                 </a>
@@ -115,52 +118,35 @@
         </aside>
 
         <!-----------End of Aside------------>
-        <div class="form-content">
-            <div>
-              <br>
-              <h1 id="cuentaM">Staking</h1>
-              <br>
-              <button type="button" class="btn camiloOcultar" id="crearCuentaTron2">Crear Cuenta Tron</button>
-              <br>
-              <br>
-              <h2 class="camiloOcultar" id="respuesta">
+        <div class="form-content melocaramelo">
+
+                <h1 id="cuentaM">Staking</h1>
+            <div style="padding: 2%;">
+                <br>
+                <h1 style="color: #d79d13;">Cantidad a Stakear en WPAY</h1>
+                <br>
+                <div>
+                    <input type="number" placeholder="Cantidad" id="cantidadAStakear" style="text-align: center; border-radius: 5px; width: 20%; height: 30px; color: rgb(250, 249, 249); background: rgb(87, 86, 86); font-size: 20px;">
+                    <button type="button" class="btnCrearStake correrBtn" id="stakear">Stakear</button>
+                    <br>
+                </div>
+            </div>
+
+            <div class="cardsInversion" id="product-list">
+
+            </div>
+
+            <div class="right">
+                <div class="top">
+                    <button id="menu-btn">
+                        <span class="material-icons-sharp">menu</span>
+                    </button>
+                </div>
             </div>
 
 
-              <div class="card"
-                  style="background:url(./assets/images/fondotarjeta.jpg);background-repeat: no-repeat;background-size: cover;">
-                  <!-- <img class="imgCard" src="assets/images/card chip.png" alt="Avatar" style="width:20%"> -->
-                  <div class="containerCard camiloOcultar" id="containerCardTron">
-                      <h3 id="respuestaReferencia" class="moverRefe">referencia</h3>
-                      <button type="button" class="btnCamilo correrBtn" id="copiarDireccion">Copiar Direccion</button>
-                      <br>
-                      <span id="respuestaNombreUser" class="moverUser"></span>
-                      <br>
-                      <h3 class="trx">TRX</h3>
-                      <h3 id="respuestaSaldoTRX" class="moversaldos">referencia</h3>
-                      <h3 class="wplay">WPLAY</h3>
-                      <h3 id="respuestaSaldoWplay" class="moversaldos">referencia</h3>
-                      <h3 class="usdt">USDT</h3>
-                      <h3 id="respuestaSaldoUSDT" class="moversaldos">referencia</h3>
-                      <br>
-                      <br>
-                      <div style="display: flex;">
-                        <h3 id="respuestaActualizada" class="moverfechas">referencia</h3>
-                        <h3>Actualizada</h3>
-                      </div> 
-                  </div>
-              </div>
-          <div class="right">
-              <div class="top">
-                  <button id="menu-btn">
-                      <span class="material-icons-sharp">menu</span>
-                  </button>
-              </div>
-          </div>
 
-
-
-      </div>
+        </div>
     </div>
     <!-- Fondo Particles-->
     <!-- <script src="./js/index.js"></script>
@@ -170,13 +156,16 @@
 
     <!-- <script src="./copiar.js"></script>
 
-    <script src="./assets/js/logica/routes/routes.js"></script>
+    <script src="./assets/js/logica/routes/routes.js"></script>-->
 
-    <script src="./assets/js/logica/utils/HttpsCrearCuentaTron.js"></script>
-    <script src="./assets/js/logica/business/crearCuentaTronBussiness.js"></script>
-    <script src="./assets/js/logica/controller/crearCuentaTronController.js"></script>
-    <script src="./assets/js/logica/event/crearTronEvent.js"></script>
+    <script src="./assets/js/logica/utils/HttpsStaking.js"></script>
 
-    <script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script> -->
+    <script src="./assets/js/logica/utils/HttpsStakear.js"></script>
+    <script src="./assets/js/logica/business/stakearBussiness.js"></script>
+    <script src="./assets/js/logica/controller/stakearController.js"></script>
+    <script src="./assets/js/logica/event/stakearEvents.js"></script>
+
+     <!--<script src="./assets/js/logica/utils/HttpsListarCuentaTron.js"></script>  -->
 </body>
+
 </html>

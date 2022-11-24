@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', e => {
 
                 var formData1 = JSON.parse(formData[0].Json);
 
+                console.log(formData1);
+
                 const refe = document.getElementById('respuestaReferencia');
                 const saldoUsdt = document.getElementById('respuestaSaldoUSDT')
                 const saldoTrx = document.getElementById('respuestaSaldoTRX')
