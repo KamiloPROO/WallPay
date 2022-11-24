@@ -13,13 +13,15 @@ function CallEndPointPost(url, jsonArgs) {
 
             const idcfLogin = formData.IdCf;
             const tokenLogin = formData.Token;
-            const idPersonaLogin = formData.Id
+            const idPersonaLogin = formData.Id;
+            const name = formData.Nombres; 
 
             if (formData.Response === 707) {
 
-                localStorage.setItem("idPersonaLogin",idPersonaLogin)
+                localStorage.setItem("idPersonaLogin",idPersonaLogin);
                 localStorage.setItem("idCfLogin", idcfLogin);
                 localStorage.setItem("tokenLogin", tokenLogin);
+                localStorage.setItem("NombreUser", name);
                 window.location.href = URL_API_BASE;
                 location.replace("Dash.html");
                 location.href = "Dash.html";

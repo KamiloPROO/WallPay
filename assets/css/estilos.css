@@ -218,6 +218,11 @@ a {
 
 }
 
+/* .nombreDash{
+    overflow: hidden;
+    width: 30%;
+} */
+
 .form-content .btn a {
 
     color: var(--text-white);

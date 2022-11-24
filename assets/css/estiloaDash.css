@@ -624,6 +624,8 @@ a {
 }
 
 .moversaldos {
+    overflow: hidden;
+    width: 25%;
     margin-left: 80%;
 }
 
