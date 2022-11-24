@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', e => {
 
-    // var idLogin = localStorage.getItem("idPersonaLogin");
+    var idLogin = localStorage.getItem("idPersonaLogin");
 
     $.ajax({
         type: "POST",
         url: "http://52.175.225.67:8059/api/stake/listaStakes",
-        data: { "ID_USUARIO": 16 },
+        data: { "ID_USUARIO": idLogin },
         success: function (data) {
 
 
